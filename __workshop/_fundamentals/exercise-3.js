@@ -19,9 +19,13 @@ const people = [
 
 function fullName(peopleArr) {
   // return something
+  return peopleArr.map(p => Object.values(p.name).join(" "))
 }
 
 // 2. Do a console.log to verify your function.
+console.log(
+  fullName(people)
+)
 
 // 3. Run the test to validate: yarn test exercise-3
 

@@ -87,9 +87,16 @@ const staffMembers = [
 
 const getData = (arr, key, val) => {
   // return something
+  let level1 = arr.filter(p => p[key]).filter(p => p[key] === val);
+  if(level1.length === 0){
+    return arr.filter(p => p.skillLevels[key] >= val)
+  } else{ return level1}
 };
 
 // 2. Do a console.log to verify your function.
+console.log(
+  getData(staffMembers, 'sql', 7)
+)
 
 // 3. Run the test to validate: yarn test exercise-5
 

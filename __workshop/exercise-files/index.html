@@ -5,10 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form action="" autocomplete="on">
+        <div class="center">
+          <label for="name">Full  name</label> <input type="text" id="name"  />
+        </div>
+        <div class="center">
+          <label for="street">Street address</label> <input type="text"  id="street" />
+        </div>
+        <div class="center">
+          <label for="email">Email address</label> <input type="email"  id="email" />
+        </div>
+        <div class="center">
+          <label for="phone">Phone number</label> <input type="text" id="phone" />
+        </div>
+        <div class="center">
+          <label for="password" >Password</label> <input type="password"  class="password" />
+        </div>
+        <div class="center">
+          <label for="confirm">Confirm password</label> <input type="password" class="password" />
+        </div>
+        <div id="error_msg"></div>
+
+        <div class="terms">
+          <input type="checkbox" name="" id="agree"  ><label for="agree" class="terms_msg">I agree to the <a href="#">terms of service</a></label>
+        </div>
+        
+        <div class="buttons"><button id="clear">Clear</button> <button id="submit">submit</button></div>
+      </form>
+
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

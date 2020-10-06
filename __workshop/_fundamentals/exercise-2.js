@@ -21,9 +21,13 @@ const people = [
 
 function avgAge(peopleArr) {
   // return something
+  return Math.round( peopleArr.reduce((acc, curr) => acc + curr.age, 0) / peopleArr.length)
 }
 
 // 2. Do a console.log to verify your function.
+console.log(
+  avgAge(people)
+)
 
 // 3. Run the test to validate: yarn test exercise-2
 
